@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Transient;
 
 @Entity(name = "emppp")
 public class Employee {
@@ -11,19 +12,21 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
-    private String gender;
+    private String name,gender;
     private int salary;
+    @Transient
+    private String compName;
 
     public Employee() {
 
     }
 
-    public Employee(String name, String gender, int salary) {
+    public Employee(String name, String gender, int salary, String compName ) {
      
         this.name = name;
         this.gender = gender;
         this.salary = salary;
+        this.compName = compName;
     }
 
 

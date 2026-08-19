@@ -12,7 +12,7 @@ public class Main {
 	public static void main(String[] args) {
 
 
-		Employee emp = new Employee("Avinash Jain", "male", 99000);
+		Employee emp = new Employee("Avinash Jain", "male", 99000,"HCL");
 
 //		Configuration cfg = new Configuration().configure("hibernate.cfg.xml");
 //		SessionFactory sessionFactory = cfg.buildSessionFactory();
