@@ -15,7 +15,9 @@ public class Main {
 
 		Session session = HinbernateConfig.getSessionFactory().openSession();
 		Transaction transaction = session.beginTransaction();
-
+		
+		
+		session.persist(emp);
 		transaction.commit();
 
 

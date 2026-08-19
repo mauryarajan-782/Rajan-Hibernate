@@ -20,7 +20,6 @@ public class Employee {
     }
 
     public Employee(String name, String gender, int salary) {
-     
         this.name = name;
         this.gender = gender;
         this.salary = salary;
