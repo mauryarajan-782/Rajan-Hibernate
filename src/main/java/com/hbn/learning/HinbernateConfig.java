@@ -29,11 +29,6 @@ public class HinbernateConfig {
 
 
 
-//		StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
-//		Metadata meta = new MetadataSources(ssr).getMetadataBuilder().build();
-
-
-
         StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().applySettings(properties).build();
 
         Metadata meta = new MetadataSources(ssr).addAnnotatedClass(com.hbn.learning.entity.Employee.class).getMetadataBuilder().build();
