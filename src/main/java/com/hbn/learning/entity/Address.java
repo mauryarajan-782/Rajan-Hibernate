@@ -17,8 +17,6 @@ public class Address {
     private int pincode;
 
     
-    @OneToOne(mappedBy = "address")
-    private Employee employee;
     
     public Address() {
 
@@ -32,15 +30,7 @@ public class Address {
 	}
 
     
-    public Employee getEmployee() {
-		return employee;
-	}
-
-
-	public void setEmployee(Employee employee) {
-		this.employee = employee;
-	}
-
+   
 
 	public int getId() {
 		return id;
