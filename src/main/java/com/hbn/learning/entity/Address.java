@@ -17,11 +17,9 @@ public class Address {
     private int pincode;
 
     
-    
-    public Address() {
+     public Address() {
 
     }
-    
     
     public Address(String city, String state, int pincode) {
 		this.city = city;
@@ -30,9 +28,7 @@ public class Address {
 	}
 
     
-   
-
-	public int getId() {
+    public int getId() {
 		return id;
 	}
 
